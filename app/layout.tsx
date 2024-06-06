@@ -1,28 +1,26 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./components/Navbar";
-import Myprofile from "./components/Myprofile";
+import './globals.css'
+import Navbar from './components/Navbar'
+import type { Metadata } from 'next'
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Blog",
-  description: "Created by Krish",
-};
+  title: "Krish's Blog",
+  description: 'Created by Krish Goyal',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className= "dark:bg-slate-800">
-        <Navbar/>
-        <Myprofile/>
-        {children}
-        </body>
+      <body className="dark:bg-slate-800">
+        <Navbar />
+        <main className="px-4 md:px-6 prose prose-xl prose-slate dark:prose-invert mx-auto">
+          {children}
+        </main>
+      </body>
     </html>
-  );
+  )
 }
