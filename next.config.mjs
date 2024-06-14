@@ -1,19 +1,4 @@
-// next.config.mjs
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'raw.githubusercontent.com',
-        port: '',
-        pathname: '/Venom410/mdx-files/main/images/**',
-      },
-    ],
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
