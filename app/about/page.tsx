@@ -9,35 +9,25 @@ import CultureGalleryCarousel from './CultureGalleryCarousel';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200">
-      <div
-        className="bg-cover bg-center relative"
-        style={{ backgroundImage: "url('/assets/hero_bg.jpg')" }}
-      >
-        <div className="bg-gray-900 bg-opacity-60 py-24 px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="container mx-auto">
-            <div className="mb-16 text-center text-white mt-20">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
-                Overview
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
-              </h2>
-              <p className="text-gray-100 mb-6">
-                Pioneering Digital Transformation Through Innovative Solutions.
-                We Seamlessly Blend Strategy, Design, Technology, And Data Science
-                To Help Businesses Navigate The Digital Landscape. Our
-                Multidisciplinary Experts Co-Create Tailored, Future-Ready
-                Strategies That Unlock Growth Through Intelligent Automation And
-                Data-Driven Insights.
-              </p>
-            </div>
-          </div>
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
+        <div className="absolute inset-0"></div>
+        <div className="relative z-10 max-w-3xl mx-auto text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">What do we do?</h1>
+          <p className="text-lg md:text-xl mb-6">
+            Pioneering Digital Transformation Through Innovative Solutions. We 
+            Seamlessly Blend Strategy, Design, Technology, And Data Science To 
+            Help Businesses Navigate The Digital Landscape. Our Multidisciplinary 
+            Experts Co-Create Tailored, Future-Ready Strategies That Unlock Growth 
+            Through Intelligent Automation And Data-Driven Insights.
+          </p>
         </div>
-      </div>
+      </section>
       
       {/* Who Are We */}
       <div className="mb-16 text-center mt-20">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Who Are We
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
         </h2>
         <p className="text-gray-700 mb-6 max-w-3xl mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. A mollitia pariatur perferendis veniam quibusdam quo, consequuntur modi incidunt! Vel aliquam error magni et dolorum!
@@ -58,33 +48,29 @@ const About: React.FC = () => {
       
       {/* Testimonials */}
       <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Testimonials
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
         </h2>
         <Testimonial />
       </div>
 
       {/* Careers */}
-      <div className="mb-16 text-center hero relative flex items-center justify-center h-screen bg-cover bg-center bg-hero-pattern" 
-      style={{ backgroundImage: "url('/assets/hero.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-500 to-transparent"></div>
+      <div className="mb-16 text-center hero relative flex items-center justify-center h-screen bg-cover bg-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
         <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block text-white">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
             Careers
-            <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
           </h2>
           <p className="text-gray-200 mb-6 max-w-lg mx-auto">
             Explore exciting career opportunities at Digicraft. Join our team of innovators and make an impact in the digital world.
           </p>
           <div className="flex justify-center space-x-6">
             <Link href="/careers">
-              <p className="bg-blue-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+              <p className="bg-white text-blue-500 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105">
                 Explore Careers
               </p>
             </Link>
             <Link href="/founders">
-              <p className="bg-blue-500 text-white py-2 px-6 rounded-full text-lg font-semibold hover:bg-blue-600 transition duration-300 transform hover:scale-105">
+              <p className="bg-white text-blue-500 py-2 px-6 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300 transform hover:scale-105">
                 Meet Our Founders
               </p>
             </Link>
@@ -94,9 +80,8 @@ const About: React.FC = () => {
       
       {/* Blogs */}
       <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Blogs
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
         </h2>
         <div className="mt-8">
           <BlogCarousel />
@@ -110,51 +95,20 @@ const About: React.FC = () => {
 
       {/* Media and Events */}
       <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Media and Events
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
         </h2>
         <MediaEventsCarousel />
       </div>
 
       {/* Culture Gallery */}
       <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
+        <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
           Culture Gallery
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
         </h2>
         <CultureGalleryCarousel />
       </div>
 
-      {/* Why Work With Us */}
-      <div className="mb-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
-          <Link href='/careers'>Why Work With Us?</Link>
-          <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-px w-16 h-1 bg-blue-500"></span>
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
-          <div className="p-6 bg-white rounded-md shadow-md transition transform hover:scale-105">
-            <img src="/assets/flexi_w.jpeg" alt="Flexible Working Hours" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Flexible Working Hours</h3>
-            <p className="text-gray-600">We are not a 9 to 5 organization. Our flexible working hour policy ensures every employee in Quarks feels a sense of work-life balance.</p>
-          </div>
-          <div className="p-6 bg-white rounded-md shadow-md transition transform hover:scale-105">
-            <img src="/assets/room_t.jpeg" alt="Room to Grow" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Room to Grow</h3>
-            <p className="text-gray-600">Work on challenging IT projects and unleash your potential. Our team leads are your mentors, helping you to work, learn, develop, and grow.</p>
-          </div>
-          <div className="p-6 bg-white rounded-md shadow-md transition transform hover:scale-105">
-            <img src="/assets/health_i.jpeg" alt="Health Insurance" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Health Insurance</h3>
-            <p className="text-gray-600">Each Digicraft employee has medical insurance applicable in private and public healthcare facilities.</p>
-          </div>
-          <div className="p-6 bg-white rounded-md shadow-md transition transform hover:scale-105">
-            <img src="/assets/flexible_b.jpeg" alt="Flexible Benefits" className="w-16 h-16 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Flexible Benefits</h3>
-            <p className="text-gray-600">Our employees can pick the benefit they want and need from the wide range of benefit options Digicraft offers.</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };

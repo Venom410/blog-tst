@@ -70,16 +70,12 @@ const Service: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div
-        className="bg-gradient-to-r from-blue-100 via-purple-100 to-blue-200 text-gray-900 py-24 px-4 sm:px-6 lg:px-8"
-      >
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Transforming Businesses with Digital Solutions</h1>
-          <p className="text-lg text-gray-700">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae velit at eros tristique aliquam....
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Digital Solutions</h1>
+          <p className="text-lg text-white">Our expertise in various domains empowers your business with the right technology solutions to drive growth and efficiency.</p>
         </div>
-      </div>
+      </section>
 
       {/* Services Section */}
       <div className="container mx-auto py-12 px-4">
@@ -88,7 +84,7 @@ const Service: React.FC = () => {
           {services.map((service, index) => (
             <div 
               key={service.id} 
-              className="flex flex-col md:flex-row items-center md:space-x-8 opacity-0 transition-opacity duration-1000 ease-in-out"
+              className={`flex flex-col md:flex-row items-center md:space-x-8 transition-opacity duration-1000 ease-in-out opacity-0 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
               ref={(el) => serviceRefs.current[index] = el}
             >
               <div className="md:w-1/2">

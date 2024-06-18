@@ -30,9 +30,7 @@ const App = () => {
           <Title subTitle="Our Domains" title="Where We Work" />
         </Link>
         <Domains />
-        <Link href="/technologies"> 
           <Title subTitle="Our Technologies" title="What We Know" />
-        </Link>
         <Technologies />
         <Title subTitle="Our Clients" title="More Than Just Tech, We Engineer Business Breakthroughs" />
         <Clients />

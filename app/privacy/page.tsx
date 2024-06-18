@@ -3,19 +3,15 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="container mx-auto py-12 px-4">
-      <div
-        className="relative bg-cover bg-center bg-no-repeat h-96"
-        style={{ backgroundImage: 'url(/assets/privacy_policy_bg.jpg)' }}
-      >
-        <div className="absolute inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
-          </div>
+    <div>
+      
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
         </div>
-      </div>
+      </section>
 
-      <div className="py-12 px-4">
+      <div className="py-12 px-4 md:px-8 lg:px-16">
         <h2 className="text-3xl font-semibold mb-4">Introduction</h2>
         <p className="text-lg mb-8">
           Digicraft ("we," "us," or "our") is committed to protecting the privacy and 
@@ -82,7 +78,7 @@ const PrivacyPolicy = () => {
 
         <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
         <p className="text-lg mb-8">
-          If you have any questions or concerns about this policy, please contact us through our <Link href="/contact"> Contact page</Link>.
+          If you have any questions or concerns about this policy, please contact us through our <Link href="/contact" className="text-blue-500 hover:underline">Contact page</Link>.
         </p>
       </div>
     </div>

@@ -72,27 +72,20 @@ const Domain: React.FC = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once while scrolling down
+      duration: 1000,
+      once: true,
     });
   }, []);
 
   return (
     <div>
       {/* Hero Section */}
-      <div
-        className="relative bg-cover bg-center bg-no-repeat h-96"
-        style={{ backgroundImage: 'url(/assets/hero_bg.jpg)' }}
-      >
-        <div className="absolute inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore Our Expertise</h1>
-            <p className="text-lg md:text-xl">
-              Discover the wide range of domains we specialize in and how we can help your business grow.
-            </p>
-          </div>
+      <section className="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Explore our Expertise</h1>
+          <p className="text-lg text-white">Discover the wide range of domains we specialize in and how we can help your business grow.</p>
         </div>
-      </div>
+      </section>
 
       {/* Domains Section */}
       <div className="container mx-auto py-12 px-4">

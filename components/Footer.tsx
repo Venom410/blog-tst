@@ -8,18 +8,29 @@ const Footer = () => {
         <p className="mb-4 md:mb-0">© 2024 DigiCraft. All rights reserved</p>
         <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
           <li>
-            <Link href="/terms" className="hover:underline">Terms of Service</Link>
+            <Link href="/terms">
+              <p className="hover:underline">Terms of Service</p>
+            </Link>
           </li>
           <li>
-            <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+            <Link href="/privacy">
+              <p className="hover:underline">Privacy Policy</p>
+            </Link>
           </li>
           <li>
-            <Link href="/careers" className="hover:underline">Careers</Link>
+            <Link href="/careers">
+              <p className="hover:underline">Careers</p>
+            </Link>
           </li>
           <li>
             <Link href="https://www.linkedin.com/company/digicraft-ai/mycompany/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline flex items-center">
               <FaLinkedin className="mr-1" />
               LinkedIn
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <p className="hover:underline">Home</p>
             </Link>
           </li>
         </ul>

@@ -1,15 +1,14 @@
-import React, { useEffect, useRef } from 'react';
-
+import React, { useEffect, useRef, MouseEvent, FC } from 'react';
 
 interface VideoplayerProps {
   playState: boolean;
   setPlayState: (state: boolean) => void;
 }
 
-const Videoplayer: React.FC<VideoplayerProps> = ({ playState, setPlayState }) => {
+const Videoplayer: FC<VideoplayerProps> = ({ playState, setPlayState }) => {
   const player = useRef<HTMLDivElement>(null);
 
-  const closePlayer = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const closePlayer = (e: MouseEvent<HTMLDivElement>) => {
     if (e.target === player.current) {
       setPlayState(false);
     }

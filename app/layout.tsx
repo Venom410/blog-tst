@@ -1,6 +1,7 @@
 // app/layout.tsx
 import './globals.css';
 import Navbar from '../components/Navbar';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 import Footer from '../components/Footer';
 import type { Metadata } from 'next';
 
@@ -20,6 +21,7 @@ const RootLayout = ({
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
