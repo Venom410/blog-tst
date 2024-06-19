@@ -70,7 +70,9 @@ const FoundersPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {founders.map((founder, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl">
-                <img src={founder.img} alt={founder.name} className="w-32 h-32 rounded-full mb-4 shadow-md" />
+                <div className="relative mb-4">
+                  <img src={founder.img} alt={founder.name} className="w-32 h-32 rounded-full border-4 border-blue-600" />
+                </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 text-center">{founder.name}</h3>
                 <p className="text-blue-500 mb-2">{founder.title}</p>
                 <p className="text-gray-600 text-center mb-4">{founder.description}</p>

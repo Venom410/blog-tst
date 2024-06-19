@@ -64,7 +64,7 @@ const DomainsData: Domain[] = [
     title: "E-Commerce",
     description: "Our e-commerce domain delivers end-to-end solutions to create robust and scalable online stores. We offer services such as e-commerce website development, inventory management systems, and payment gateway integration. Our goal is to help businesses establish a strong online presence and drive sales in the competitive e-commerce landscape.",
     imageUrl: "/assets/domain_9.jpg"
-  }
+  },
 ];
 
 const Domain: React.FC = () => {

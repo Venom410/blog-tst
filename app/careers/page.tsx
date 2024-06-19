@@ -13,7 +13,7 @@ const Career = () => {
           <p className="text-lg md:text-xl mb-6">
             Do you think working on the latest technologies is always your aspiration? Do you feel that your work speaks louder than your actions?
             Do you really think that you can work in a fast-paced environment with sharp, intelligent, and like-minded people like you? Well, if you think you can, you have just jumped into
-            the right place. Quarks promises to provide you with all the opportunities where you
+            the right place. Digicraft promises to provide you with all the opportunities where you
             can work on challenging projects, use cutting-edge technologies, and provide you continuous
             learning environment that is just right to enhance your career.
           </p>
@@ -80,7 +80,7 @@ const Career = () => {
         <div className="locations-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="location-item p-6 bg-white rounded-md shadow-md text-center transition transform hover:scale-105">
             <h3 className="text-xl font-semibold mb-2">Gurugram</h3>
-            <p className="text-gray-600">Complete address to the office goes here</p>
+            <p className="text-gray-600">J-2846, DSIIDC, Narela Industrial Complex Narela, Delhi, North West Delhi- 110040 </p>
           </div>
         </div>
       </div>
