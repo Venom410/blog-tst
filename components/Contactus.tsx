@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import ContactForm from './ContactForm';
 const Contactus = () => {
   const [sending, setSending] = useState(false);
 
@@ -36,40 +36,14 @@ const Contactus = () => {
         </ul>
       </div>
       <div className="contact-col flex-1">
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg">
-          <label className="block mb-2 text-blue-600 font-medium">Your Name</label>
-          <input 
-            type="text" 
-            name='name' 
-            placeholder='Enter your name :' 
-            required 
-            className="input-field border border-gray-300 rounded-md p-2 w-full mb-4 focus:border-blue-500 focus:ring-blue-500"
-          />
-          <label className="block mb-2 text-blue-600 font-medium">Your Phone</label>
-          <input 
-            type="tel" 
-            name='phone' 
-            placeholder='Enter your mobile :' 
-            required 
-            className="input-field border border-gray-300 rounded-md p-2 w-full mb-4 focus:border-blue-500 focus:ring-blue-500"
-          />
-          <label className="block mb-2 text-blue-600 font-medium">Write your message here</label>
-          <textarea 
-            name="message" 
-            rows='6' 
-            placeholder='Enter your message' 
-            required 
-            className="input-field border border-gray-300 rounded-md p-2 w-full mb-4 focus:border-blue-500 focus:ring-blue-500"
-          ></textarea>
-          <button 
-            type='submit' 
-            className='btn dark-btn bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold py-2 px-4 rounded-md hover:from-purple-500 hover:to-blue-500 transition duration-300'
-          >
-            Submit now
-          </button>
-        </form>
-        {sending && <span className="text-blue-500 mt-2 block">Sending...</span>}
-      </div>
+       
+      <div className="bg-white p-8 rounded-lg mb-8 shadow-md">
+          <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
+          <ContactForm />
+          
+        </div>
+    
+     </div>
     </div>
   );
 };
